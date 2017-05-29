@@ -65,9 +65,19 @@ The major points are:
 11. Push the production branch of the repository from your machine up to your git server
  - `git push origin production`
 
-### Stash
+### Bitbucket
 
-Coming soon!
+1. Create a new repository in a Bitbucket called 'control-repo'
+2. Clone this control repository to your laptop/workstation:
+  - `git clone <repository url>`
+  - `cd control-repo`
+
+3. Remove this repository as the origin remote:
+  - `git remote remove origin`
+
+4. Add your internal repository as the origin remote:
+  - `git remote add origin <url of your github repository>`
+  - Note: the exact URL will be provided in the empty Bitbucket repo landing page
 
 ### GitHub
 
